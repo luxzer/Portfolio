@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora las obras más famosas de la historia del arte">
+    <meta name="keywords" content="arte, pinturas, esculturas, obras famosas, museos">
+    <meta name="author" content="Luis Calderon / Vecordia">
+    <title class="titulo-obras">Obras Famosas</title>
+    
+ 
+    <link rel="icon" type="image/svg+xml" href="assets/LogoS.svg">
+        
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/LogoS.svg" alt="Logo Vecordia" class="logo-marca" width="40" height="40">
+                 Vecordia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="obras.html">Obras Famosas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="botonModoOscuro" class="btn btn-outline-primary ms-2">
+                            <i class="bi bi-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="seccion-hero text-center">
+            <div class="hero-section text-white py-5 mb-5">
+                <div class="container text-center">
+                    <h1 class="display-4">Contacto y Privacidad</h1>
+                    <p class="lead">Aca te podras contactar y ver nuestras politicas de Privacidad!</p>
+                </div>
+            </div>
+        </section>
+
+     
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card tarjeta-obra h-100">
+                            <img src="assets/MonaLisa.jpg" class="card-img-top" alt="La Mona Lisa" height="600"
+                                 onclick="mostrarImagenGrande('assets/MonaLisa.jpg', 'La Mona Lisa')"
+                                 style="cursor: pointer;">
+                            <div class="card-body">
+                                <h3>La Mona Lisa</h3>
+                                <p class="texto-destacado">Leonardo da Vinci (1503-1519)</p>
+                                <p>Obra maestra del Renacimiento italiano, famosa por su misteriosa sonrisa.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card tarjeta-obra h-100">
+                            <img src="assets/Ragnarok.jpg" class="card-img-top" alt="Ragnarok" height="600"
+                                 onclick="mostrarImagenGrande('assets/Ragnarok.jpg', 'Ragnarok')"
+                                 style="cursor: pointer;">
+                            <div class="card-body">
+                                <h3>Ragnarok</h3>
+                                <p class="texto-destacado">Henry Fuseli (1788)</p>
+                                <p>Una representación dramática de la mitología nórdica.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card tarjeta-obra h-100">
+                            <img src="assets/ElGrito.png" class="card-img-top" alt="El Grito" height="600"
+                                 onclick="mostrarImagenGrande('assets/ElGrito.png', 'El Grito')"
+                                 style="cursor: pointer;">
+                            <div class="card-body">
+                                <h3>El Grito</h3>
+                                <p class="texto-destacado">Edvard Munch (1893)</p>
+                                <p>Símbolo del existencialismo y la ansiedad moderna.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+      
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card tarjeta-obra h-100">
+                            <img src="assets/WeCanDoIt.jpeg" class="card-img-top" alt="We Can Do It!" height="600"
+                                 onclick="mostrarImagenGrande('assets/WeCanDoIt.jpeg', 'We Can Do It!')"
+                                 style="cursor: pointer;">
+                            <div class="card-body">
+                                <h3>We Can Do It!</h3>
+                                <p class="texto-destacado">J. Howard Miller (1943)</p>
+                                <p>Icono del feminismo y el esfuerzo durante la Segunda Guerra Mundial.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card tarjeta-obra h-100">
+                            <img src="assets/Monet.jpeg" class="card-img-top" alt="Impression, soleil levant" height="600"
+                                 onclick="mostrarImagenGrande('assets/Monet.jpeg', 'Impression, soleil levant')"
+                                 style="cursor: pointer;">
+                            <div class="card-body">
+                                <h3>Impression, soleil levant</h3>
+                                <p class="texto-destacado">Claude Monet (1872)</p>
+                                <p>Obra que dio nombre al movimiento impresionista.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card tarjeta-obra h-100">
+                            <img src="assets/Paraiso.jpg" class="card-img-top" alt="El Paraíso" height="600"
+                                 onclick="mostrarImagenGrande('assets/Paraiso.jpg', 'El Paraíso')"
+                                 style="cursor: pointer;">
+                            <div class="card-body">
+                                <h3>El Paraíso</h3>
+                                <p class="texto-destacado">Jan Brueghel (1620)</p>
+                                <p>Una visión idílica del jardín del Edén.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card tarjeta-obra h-100">
+                            <img src="assets/StarryNight.jpg" class="card-img-top" alt="La Noche Estrellada" height="600"
+                                 onclick="mostrarImagenGrande('assets/StarryNight.jpg', 'La Noche Estrellada')"
+                                 style="cursor: pointer;">
+                            <div class="card-body">
+                                <h3>La Noche Estrellada</h3>
+                                <p class="texto-destacado">Vincent van Gogh (1889)</p>
+                                <p>Una de las obras más reconocibles del post-impresionismo.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card tarjeta-obra h-100">
+                            <img src="assets/LasMeninas.jpg" class="card-img-top" alt="LasMeninas" height="600"
+                                 onclick="mostrarImagenGrande('assets/LasMeninas', 'LasMeninas')"
+                                 style="cursor: pointer;">
+                            <div class="card-body">
+                                <h3>LasMeninas</h3>
+                                <p class="texto-destacado">Diego Velázquez (1656)</p>
+                                <p>Las meninas o La familia de Felipe IV se considera la obra maestra del pintor del Siglo de Oro español Diego Velázquez.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card tarjeta-obra h-100">
+                            <img src="assets/Saturno.jpg" class="card-img-top" alt="Saturno" height="600"
+                                 style="cursor: pointer;">
+                            <div class="card-body">
+                                <h3>Saturno devorando a su hijo</h3>
+                                <p class="texto-destacado">	Francisco de Goya (1820-1823)</p>
+                                <p>El cuadro Saturno devorando a su hijo o simplemente Saturno,1​ es una de las pinturas al óleo sobre revoco que formaron parte de la decoración de los muros de la casa que Francisco de Goya adquirió en 1819, llamada la Quinta del Sordo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card tarjeta-obra h-100">
+                            <img src="assets/Nubes.jpg" class="card-img-top" alt="Nubes" height="600"
+                                 style="cursor: pointer;">
+                            <div class="card-body">
+                                <h3>El caminante sobre el mar de nubes</h3>
+                                <p class="texto-destacado">	Caspar David Friedrich (1818)</p>
+                                <p>El caminante sobre el mar de nubes es un óleo sobre tela del pintor romántico alemán Caspar David Friedrich.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card tarjeta-obra h-100">
+                            <img src="assets/Marilyn.jpg" class="card-img-top" alt="Marilyn" height="600"
+                                 style="cursor: pointer;">
+                            <div class="card-body">
+                                <h3>Díptico de Marilyn</h3>
+                                <p class="texto-destacado"> Andy Warhol</p>
+                                <p>Esta obra  es una de las  primeras que hizo tras enterarse del suicidio de Marilyn  en 1962  y el punto de partida es una fotografía de la película Nyágara ( 1953)  una de las que consagró a la actriz como sex-simbol.  </p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-lg-4 col-md-6">
+                            <div class="card tarjeta-obra h-100">
+                                <img src="assets/Napoleon.jpg" class="card-img-top" alt="Napoleon" height="600"
+                                     style="cursor: pointer;">
+                                <div class="card-body">
+                                    <h3>Napoleón cruzando los Alpes</h3>
+                                    <p class="texto-destacado"> Jacques-Louis David (1801)</p>
+                                    <p>Napoleón cruzando los Alpes es el título de cinco versiones de un retrato ecuestre pintado al óleo sobre lienzo de Napoleón Bonaparte,</p>
+                                </div>
+                            </div> -->
+
+
+                    </main>
+
+
+                    <footer class="pie-pagina mt-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Vecordia</h5>
+                                    <p>Explorando la belleza del arte universal</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>Enlaces Rápidos</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="index.html">Inicio</a></li>
+                                        <li><a href="obras.html">Obras Famosas</a></li>
+                                        <li><a href="historia.html">Historia</a></li>
+                                        <li><a href="contacto.html">Contacto</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>Síguenos</h5>
+                                    <div class="iconos-sociales">
+                                        <a href="#"><i class="bi bi-facebook"></i></a>
+                                        <a href="#"><i class="bi bi-twitter"></i></a>
+                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+
+    <script src="js/funciones.js"></script>
+</body>
+</html>

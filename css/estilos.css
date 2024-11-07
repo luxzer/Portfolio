@@ -1,0 +1,185 @@
+
+.logo-marca {
+    height: 40px;
+}
+
+body.modo-oscuro {
+    background-color: #303231;
+    color: #fff;
+}
+
+.modo-oscuro .navbar {
+    background-color: #303231 !important;
+}
+
+.modo-oscuro .navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.modo-oscuro .card {
+    background-color: #444;
+    color: #fff;
+}
+
+.modo-oscuro .modal-content {
+    background-color: #303231;
+    color: #fff;
+}
+
+.modo-oscuro .list-group-item {
+    background-color: #303231;
+    color: #fff;
+}
+
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.iconos-sociales i {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+.iconos-sociales i:hover {
+    color: #0d6efd;
+}
+
+.hero-principal {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('../assets/EscuelaDeAtenas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: -76px;
+}
+
+
+.carousel-inner img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.lead {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.bi-check-circle-fill {
+    font-size: 1.2rem;
+}
+
+
+#modalImagen .modal-dialog {
+    max-width: 90vw;
+}
+
+#modalImagen img {
+    max-height: 80vh;
+    width: auto;
+    margin: auto;
+}
+
+
+.quienes-somos {
+    background-color: #f8f9fa;
+}
+
+.quienes-somos .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.quienes-somos .image-container:hover {
+    transform: translateY(-5px);
+}
+
+.quienes-somos img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.quienes-somos .content-container {
+    padding: 2rem;
+}
+
+.quienes-somos h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.quienes-somos .lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.6;
+}
+
+.quienes-somos p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .quienes-somos .content-container {
+        padding: 1rem 0;
+    }
+    
+    .quienes-somos h2 {
+        font-size: 2rem;
+    }
+}
+
+.modo-oscuro .quienes-somos {
+    background-color: #333;
+}
+
+.modo-oscuro .quienes-somos h2 {
+    color: #fff;
+}
+
+.modo-oscuro .quienes-somos .lead {
+    color: #e0e0e0;
+}
+
+.modo-oscuro .quienes-somos p {
+    color: #ccc;
+}
+
+.modo-oscuro .quienes-somos .text-muted {
+    color: #aaa !important;
+}
+
+.modo-oscuro .navbar-brand {
+    color: white !important;
+}
+.hero-section {
+    background-color: #B12C2C !important;
+}

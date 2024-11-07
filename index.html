@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de arte y cultura - Explora las obras más famosas de la historia">
+    <meta name="keywords" content="arte, pinturas, esculturas, museos, historia del arte, obras famosas">
+    <meta name="author" content="Luis Calderon / Vecordia">
+    <title class="titulo-home">Vecordia</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/LogoS.svg">
+        
+    <!-- Google Fonts - Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <link href="css/estilos.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/LogoS.svg" alt="Logo Vecordia" class="logo-marca" width="40" height="40">
+                 Vecordia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="obras.html">Obras Famosas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="botonModoOscuro" class="btn btn-outline-primary ms-2">
+                            <i class="bi bi-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+<!-- Hero Section -->
+<section class="hero-principal vh-100 d-flex align-items-center">
+    <div class="container text-center text-white">
+        <h1 class="display-1 fw-bold mb-4">Vecordia</h1>
+        <p class="lead fs-2 mb-4">Un viaje a través del arte contemporáneo</p>
+        <a href="obras.html" class="btn btn-light btn-lg">Explorar Obras</a>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Mini-Galería</h2>
+        <div id="galeriaCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row g-2">
+                        <div class="col-md-3">
+                            <img src="assets/Kanagawa.jpg" class="d-block w-100 rounded" alt="Obra 1">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/StarryNight.jpg" class="d-block w-100 rounded" alt="Obra 2">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/PaisajeV.jpg" class="d-block w-100 rounded" alt="Obra 3">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/Socrates.jpg" class="d-block w-100 rounded" alt="Obra 4">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row g-2">
+                        <div class="col-md-3">
+                            <img src="assets/LasMeninas.jpg" class="d-block w-100 rounded" alt="Obra 5">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/Sanson.jpg" class="d-block w-100 rounded" alt="Obra 6">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/Shibaraku.jpg" class="d-block w-100 rounded" alt="Obra 7">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/Paraiso.jpg" class="d-block w-100 rounded" alt="Obra 8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#galeriaCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galeriaCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Quiénes Somos -->
+<section class="quienes-somos py-5">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img src="assets/Diogenes.jpg" 
+                         class="img-fluid rounded shadow-lg" 
+                         alt="Quiénes Somos">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content-container">
+                    <h2 class="mb-4 fw-bold">Quiénes Somos</h2>
+                    <p class="lead mb-4">Somos un equipo apasionado por el arte y su historia, dedicados a hacer que las obras más importantes del mundo sean accesibles para todos.</p>
+                    <p class="text-muted">Nuestro equipo está formado por historiadores del arte, curadores y entusiastas que trabajan juntos para crear una experiencia única de aprendizaje y apreciación artística.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-md-2">
+                <img src="assets/Friends.jpg" class="img-fluid rounded shadow" alt="Nuestro Objetivo">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h2 class="mb-4">Nuestro Objetivo</h2>
+                <p class="lead">Buscamos acercar el arte a todas las personas, rompiendo las barreras entre los grandes maestros y el público general.</p>
+                <p>Nuestra misión es crear un espacio donde el arte sea accesible, comprensible y emocionante para todos, independientemente de su nivel de conocimiento previo.</p>
+                <div class="mt-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                        <span>Educación artística accesible</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                        <span>Preservación del patrimonio cultural</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                        <span>Difusión del arte universal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Principal con Patrón Z -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">¿Que encontraras aqui?</h2>
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <img src="assets/MonaLisa.jpg" alt="La Mona Lisa" class="img-fluid rounded shadow" width="300" height="200" marginLeft="2rem" >
+                </div>
+                <div class="col-md-6">
+                    <h2>La Mona Lisa</h2>
+                    <p class="texto-destacado">La obra maestra de Leonardo da Vinci, también conocida como La Gioconda, es quizás el retrato más famoso de la historia del arte.</p>
+                    <p>Pintada a principios del siglo XVI, esta obra ha cautivado a millones de personas con su misteriosa sonrisa y su técnica innovadora del sfumato.</p>
+                    <a href="obras.html#mona-lisa" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+            
+            <!-- Segunda fila (invertida) -->
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2">
+                    <img src="assets/StarryNight.jpg" alt="La Noche Estrellada" class="img-fluid rounded shadow" width="500" height="400">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h2>La Noche Estrellada</h2>
+                    <p class="texto-destacado">Vincent van Gogh creó esta obra maestra en 1889, representando una vista nocturna desde la ventana de su asilo.</p>
+                    <p>Los remolinos, las estrellas llameantes y la luna creciente se combinan en un paisaje nocturno que transmite una profunda emoción y turbulencia.</p>
+                    <a href="obras.html#noche-estrellada" class="btn btn-primary">Leer más</a>
+                </div>
+        </div>
+        <div class="text-center text-red mt-5">
+            <a href="obras.html" class="btn btn-light btn-lg">Explorar Obras</a>
+        </div>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Vecordia</h5>
+                    <p>Explorando la belleza del arte universal</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="obras.html">Obras Famosas</a></li>
+                        <li><a href="historia.html">Historia</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <div class="iconos-sociales">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script personalizado -->
+    <script src="js/funciones.js"></script>
+</body>
+</html>
