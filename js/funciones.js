@@ -14,19 +14,23 @@ function alternarModoOscuro() {
     }
 }
 
-// Ver si el DOM cargo
+// Ver si el DOM cargó
 document.addEventListener('DOMContentLoaded', function() {
+    // Mostrar alerta personalizada según la página
+    const titulo = document.title;
+     {
+        alert(`Bienvenido a ${titulo}`);
+    }
 
-    alert(`Has entrado a ${document.title}`);
-
+    // Comprobar y aplicar el modo oscuro si estaba activado
     if (localStorage.getItem('modo-oscuro') === 'activado') {
         document.body.classList.add('modo-oscuro');
         const iconoModo = document.querySelector('#botonModoOscuro i');
         iconoModo.classList.remove('bi-moon');
         iconoModo.classList.add('bi-sun');
     }
-
-    // Boton del Modo Oscuro
+    
+    // Agregar el botón del modo oscuro
     const botonModoOscuro = document.getElementById('botonModoOscuro');
     if (botonModoOscuro) {
         botonModoOscuro.addEventListener('click', alternarModoOscuro);

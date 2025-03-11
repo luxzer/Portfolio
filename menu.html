@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora nuestro exquisito menú de repostería artesanal">
+    <meta name="keywords" content="pasteles, cupcakes, tartas, galletas, postres, repostería">
+    <meta name="author" content="Francisco Cordero">
+    <title class="titulo-obras">Menú</title>
+    
+    <link rel="icon" type="image/svg+xml" href="assets/Logo.jpeg">
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/Logo.jpeg" alt="Logo Bannilha Bakery" class="logo-marca" width="40" height="40">
+                 Bannilha Bakery
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="botonModoOscuro" class="btn btn-outline-primary ms-2">
+                            <i class="bi bi-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="seccion-hero text-center">
+            <div class="hero-section text-white py-5 mb-5">
+                <div class="container text-center">
+                    <h1 class="display-4">Nuestro Menú</h1>
+                    <p class="lead">Dulzura en cada bocado</p>
+                </div>
+            </div>
+        </section>
+     
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card tarjeta-obra h-100 cafe-bg" id="tarta-chocolate">
+                            <img src="assets/tarta-chocolate.jpg" class="card-img-top" alt="Tarta de Chocolate" height="300"
+                                 style="cursor: pointer; object-fit: cover;">
+                            <div class="card-body">
+                                <h3>Tarta de Chocolate Belga</h3>
+                                <p class="texto-destacado">Nuestra especialidad</p>
+                                <p>Tres capas de puro placer con chocolate belga de primera calidad, ganache cremosa y cobertura brillante.</p>
+                                <p class="precio">$28.00</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card tarjeta-obra h-100 cafe-bg">
+                            <img src="assets/tarta-frutas.jpg" class="card-img-top" alt="Tarta de Frutas" height="300"
+                                 style="cursor: pointer; object-fit: cover;">
+                            <div class="card-body">
+                                <h3>Tarta de Frutas Frescas</h3>
+                                <p class="texto-destacado">Delicada y refrescante</p>
+                                <p>Base de masa sucrée, crema pastelera de vainilla y selección de frutas frescas de temporada.</p>
+                                <p class="precio">$26.00</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card tarjeta-obra h-100 cafe-bg" id="macarons">
+                            <img src="assets/macarons.jpg" class="card-img-top" alt="Macarons" height="300"
+                                 style="cursor: pointer; object-fit: cover;">
+                            <div class="card-body">
+                                <h3>Macarons Gourmet (6 unidades)</h3>
+                                <p class="texto-destacado">Pequeños tesoros franceses</p>
+                                <p>Delicadas galletas de almendra con ganaches y cremas de diversos sabores. Caja de 6 unidades surtidas.</p>
+                                <p class="precio">$15.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card tarjeta-obra h-100 cafe-bg">
+                            <img src="assets/cupcakes.jpg" class="card-img-top" alt="Cupcakes" height="300"
+                                 style="cursor: pointer; object-fit: cover;">
+                            <div class="card-body">
+                                <h3>Cupcakes Clásicos (4 unidades)</h3>
+                                <p class="texto-destacado">Pequeñas delicias decoradas</p>
+                                <p>Esponjosos cupcakes con frosting de buttercream en diversos sabores: vainilla, chocolate, fresa y limón.</p>
+                                <p class="precio">$12.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card tarjeta-obra h-100 cafe-bg">
+                            <img src="assets/cookies.jpg" class="card-img-top" alt="Cookies" height="300"
+                                 style="cursor: pointer; object-fit: cover;">
+                            <div class="card-body">
+                                <h3>Cookies Artesanales (6 unidades)</h3>
+                                <p class="texto-destacado">Crujientes por fuera, suaves por dentro</p>
+                                <p>Galletas americanas con chips de chocolate, nueces y un toque de sal marina. Horneadas diariamente.</p>
+                                <p class="precio">$10.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card tarjeta-obra h-100 cafe-bg">
+                            <img src="assets/croissants.jpg" class="card-img-top" alt="Croissants" height="300"
+                                 style="cursor: pointer; object-fit: cover;">
+                            <div class="card-body">
+                                <h3>Croissants de Mantequilla (3 unidades)</h3>
+                                <p class="texto-destacado">Hojaldrados y crujientes</p>
+                                <p>Elaborados con mantequilla francesa y fermentación lenta para un sabor incomparable.</p>
+                                <p class="precio">$8.50</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Información adicional del menú -->
+        <section class="py-4 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mb-4">Información sobre nuestros productos</h2>
+                        <p class="mb-4">Todos nuestros productos son elaborados diariamente con ingredientes frescos y de la más alta calidad. No utilizamos conservantes ni aditivos artificiales.</p>
+                        
+                        <div class="row g-4 mt-3">
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm h-100 cafe-bg">
+                                    <div class="card-body">
+                                        <i class="bi bi-calendar-check text-white mb-3 fs-1"></i>
+                                        <h3 class="h5 text-white">Pedidos Especiales</h3>
+                                        <p class="text-white">Aceptamos pedidos personalizados con 48 horas de anticipación. Consulta por diseños y sabores especiales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm h-100 cafe-bg">
+                                    <div class="card-body">
+                                        <i class="bi bi-box-seam text-white mb-3 fs-1"></i>
+                                        <h3 class="h5 text-white">Servicio a Domicilio</h3>
+                                        <p class="text-white">Entregamos en toda la ciudad. Consulta zonas de cobertura y tarifas en nuestra sección de contacto.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="pie-pagina mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Bannilha Bakery</h5>
+                    <p>Endulzando momentos especiales desde 2020</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="menu.html">Menú</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <div class="iconos-sociales">
+                        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                        <a href="https://x.com/?lang=en"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.pinterest.com/"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+
+    <script src="js/funciones.js"></script>
+</body>
+</html>
