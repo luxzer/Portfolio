@@ -3,56 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Historia del arte a través de los siglos">
-    <meta name="keywords" content="historia del arte, períodos artísticos, movimientos artísticos">
-    <meta name="author" content="Luis Calderon / Vecordia">
-    <title class="titulo-historia">Historia del Arte</title>
+    <meta name="description" content="Historia de la música y evolución de los instrumentos musicales - Harmony Sound">
+    <meta name="keywords" content="historia de la música, períodos musicales, instrumentos antiguos, evolución musical">
+    <meta name="author" content="Harmony Sound">
+    <title>Historia de la Música | Harmony Sound</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/LogoS.svg">
-        
-    <!-- Google Fonts - Montserrat -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    
+    <!-- Google Fonts - Raleway -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <!-- Bootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
     <!-- Bootstrap Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     
     <!-- Estilos personalizados -->
-    <link href="css/estilos.css" rel="stylesheet">>
+    <link href="css/estilos.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar [Igual que en obras.html] -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="./assets/LogoS.svg" alt="Logo Vecordia" class="logo-marca" width="40" height="40">
-                 Vecordia
-            </a>
+            <!-- Botón de modo oscuro a la izquierda -->
+            <button id="darkModeToggle" class="btn btn-outline-warning d-none d-lg-block">
+                <i class="bi bi-moon"></i>
+            </button>
+            
+            <!-- Botón del menú para móviles -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
+            <!-- Logo y nombre totalmente centrados -->
+            <a class="navbar-brand position-absolute start-50 translate-middle-x" href="index.html">
+                <img src="assets/logo.svg" alt="Logo Harmony Sound" class="logo-brand" width="40" height="40">
+                <span class="d-none d-sm-inline-block">Harmony Sound</span>
+            </a>
+            
+            <!-- Menú de navegación -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="obras.html">Obras Famosas</a>
+                        <a class="nav-link" href="instrumentos.html">Instrumentos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="historia.html">Historia</a>
+                        <a class="nav-link" href="historia.html">Historia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
                     </li>
-                    <li class="nav-item">
-                        <button id="botonModoOscuro" class="btn btn-outline-primary ms-2">
-                            <i class="bi bi-moon"></i>
+                    <!-- Botón de modo oscuro para móviles -->
+                    <li class="nav-item d-lg-none">
+                        <button id="darkModeToggleMobile" class="btn btn-outline-warning ms-2 w-100 mt-2">
+                            <i class="bi bi-moon"></i> Cambiar Tema
                         </button>
                     </li>
                 </ul>
@@ -60,166 +71,204 @@
         </div>
     </nav>
 
- <!-- Contenido Principal -->
-<main>
-    <div class="hero-section text-white py-5 mb-5">
-        <div class="container text-center">
-            <h1 class="display-4">Contacto y Privacidad</h1>
-            <p class="lead">Aca te podras contactar y ver nuestras politicas de Privacidad!</p>
+    <main>
+        <!-- Hero Section -->
+        <div class="hero-section text-white py-5 mb-5">
+            <div class="container text-center">
+                <h1 class="display-4">Historia de la Música</h1>
+                <p class="lead">Un viaje a través del tiempo descubriendo la evolución del arte musical</p>
+            </div>
         </div>
-    </div>
-
-    <!-- Sección Historia -->
-    <div class="container mb-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="card border-0 shadow-sm">
-                    <div class="card-body p-5">
-                        <h2 class="text-center mb-4">Nuestra Historia</h2>
-                        <p class="lead text-center mb-4">Fundada en 2024 con una visión revolucionaria del arte</p>
-                        
-                        <div class="mb-5">
-                            <p>Todo comenzó en un pequeño estudio en Santo Domingo, donde un grupo de apasionados por el arte decidió cambiar la manera en que las personas interactúan con las obras maestras de la historia. Vecordia nació de la idea de que el arte no debe estar limitado por las paredes de los museos, sino que debe ser accesible para todos.</p>
+        
+        <!-- Nuestra historia -->
+        <div class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card border-0 shadow-sm mb-5">
+                        <div class="card-body p-4 p-lg-5">
+                            <h2 class="text-center mb-4">Harmony Sound</h2>
+                            <p class="lead text-center mb-4">Fundada en 2024 con una visión innovadora de la educación musical</p>
                             
-                            <p>Nuestra fundadora, inspirada por su amor al arte y la tecnología, reunió a un equipo diverso de historiadores del arte, desarrolladores y educadores para crear una plataforma que no solo mostrara el arte, sino que contara sus historias de una manera nueva y emocionante.</p>
-                            
-                            <p>Desde nuestros humildes comienzos, hemos crecido hasta convertirnos en una comunidad vibrante de amantes del arte, compartiendo conocimientos y pasión por las obras maestras que han definido nuestra cultura.</p>
+                            <div class="mb-5">
+                                <p>Todo comenzó en un pequeño estudio de música en la ciudad, donde un grupo de músicos, profesores y amantes de la música decidieron crear un espacio digital para compartir su pasión y conocimientos con el mundo.</p>
+                                
+                                <p>Nuestro fundador, inspirado por su experiencia como músico y educador, reunió a un equipo diverso de profesionales del ámbito musical para desarrollar una plataforma que no solo mostrara instrumentos, sino que contara la historia detrás de cada nota, cada ritmo y cada melodía.</p>
+                                
+                                <p>Desde nuestros humildes comienzos, hemos crecido hasta convertirnos en una comunidad vibrante de músicos, estudiantes y entusiastas, compartiendo conocimientos y pasión por el arte musical que ha definido culturas y generaciones.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Sección de Períodos del Arte -->
-<div class="row justify-content-center mt-5 mb-5">
-    <div class="col-lg-8 text-center">
-        <h2 class="mb-4">Períodos del Arte que Encontrarás Aquí</h2>
-        <p class="lead mb-5">Explora los diferentes movimientos artísticos que han dado forma a la historia del arte, cada uno con sus características únicas y contribuciones significativas al mundo del arte.</p>
-        
-        <div class="row g-4">
-            <!-- Renacimiento -->
-            <div class="col-md-6">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body p-4">
-                        <i class="bi bi-palette text-primary mb-3 fs-3"></i>
-                        <h3 class="h4 mb-3">Renacimiento</h3>
-                        <p class="mb-0">Período revolucionario que marcó el resurgimiento del arte clásico, caracterizado por el humanismo, la perspectiva y el realismo anatómico. Grandes maestros como Leonardo da Vinci y Miguel Ángel definieron esta época dorada.</p>
+        <!-- Línea de tiempo de la música -->
+        <div class="container mb-5">
+            <h2 class="text-center mb-5">Evolución de la Música a través del Tiempo</h2>
+            
+            <div class="timeline">
+                <!-- Prehistoria -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Prehistoria</div>
+                    <div class="timeline-content">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/LosOrigenes.jpg" class="img-fluid rounded-start h-100" alt="Música prehistórica">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Los Orígenes</h3>
+                                        <p class="card-text">La música nace en la prehistoria como forma de expresión y comunicación. Los primeros instrumentos fueron percusiones corporales, seguidos por instrumentos rudimentarios hechos de huesos, conchas y materiales naturales.</p>
+                                        <p class="card-text"><small class="text-muted">40,000 - 3,000 a.C.</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Barroco -->
-            <div class="col-md-6">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body p-4">
-                        <i class="bi bi-brightness-high text-primary mb-3 fs-3"></i>
-                        <h3 class="h4 mb-3">Barroco</h3>
-                        <p class="mb-0">Arte dramático y emotivo caracterizado por el uso del claroscuro y composiciones dinámicas. Artistas como Caravaggio y Rembrandt destacaron por su dominio de la luz y la sombra para crear obras impactantes.</p>
+                
+                <!-- Antigüedad -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Antigüedad</div>
+                    <div class="timeline-content">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/Civilizaciones Antiguas.jpg" class="img-fluid rounded-start h-100" alt="Música en la Antigüedad">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Civilizaciones Antiguas</h3>
+                                        <p class="card-text">Las grandes civilizaciones como Egipto, Mesopotamia, China, India, Grecia y Roma desarrollaron tradiciones musicales complejas. Los griegos establecieron las bases teóricas de la música occidental con Pitágoras.</p>
+                                        <p class="card-text"><small class="text-muted">3,000 a.C. - 476 d.C.</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Impresionismo -->
-            <div class="col-md-6">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body p-4">
-                        <i class="bi bi-sun text-primary mb-3 fs-3"></i>
-                        <h3 class="h4 mb-3">Impresionismo</h3>
-                        <p class="mb-0">Movimiento revolucionario que capturó la luz y el color de manera innovadora. Artistas como Monet y Renoir transformaron la pintura al aire libre, enfocándose en los efectos cambiantes de la luz natural.</p>
+                
+                <!-- Edad Media -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Edad Media</div>
+                    <div class="timeline-content">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/Canto.png" class="img-fluid rounded-start h-100" alt="Música Medieval">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Canto Gregoriano y Polifonía</h3>
+                                        <p class="card-text">La Edad Media estuvo dominada por la música religiosa, con el canto gregoriano como principal expresión. Surgió la polifonía y se desarrollaron los primeros sistemas de notación musical. Los trovadores y juglares popularizaron la música secular.</p>
+                                        <p class="card-text"><small class="text-muted">476 - 1450</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Arte Moderno -->
-            <div class="col-md-6">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body p-4">
-                        <i class="bi bi-triangle text-primary mb-3 fs-3"></i>
-                        <h3 class="h4 mb-3">Arte Moderno</h3>
-                        <p class="mb-0">Ruptura con las tradiciones artísticas que dio lugar a nuevas formas de expresión. Desde el cubismo de Picasso hasta el surrealismo de Dalí, este período revolucionó nuestra percepción del arte.</p>
+                
+                <!-- Renacimiento -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Renacimiento</div>
+                    <div class="timeline-content">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/Humanismo.jpg" class="img-fluid rounded-start h-100" alt="Música Renacentista">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Humanismo Musical</h3>
+                                        <p class="card-text">El Renacimiento trajo un renovado interés por el arte y la cultura clásica. La música se volvió más equilibrada y armoniosa. Compositores como Palestrina y Monteverdi desarrollaron nuevas formas musicales. Se perfeccionaron instrumentos como el laúd y la viola da gamba.</p>
+                                        <p class="card-text"><small class="text-muted">1450 - 1600</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Arte Contemporáneo -->
-            <div class="col-md-6 mx-auto">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body p-4">
-                        <i class="bi bi-box text-primary mb-3 fs-3"></i>
-                        <h3 class="h4 mb-3">Arte Contemporáneo</h3>
-                        <p class="mb-0">El arte de nuestro tiempo, que rompe barreras entre medios y conceptos tradicionales. Abarca desde instalaciones hasta arte digital, reflejando la diversidad y complejidad de la sociedad actual.</p>
+    </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="container py-5">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                                <div class="footer-brand mb-4">
+                                    <img src="assets/logo.svg" alt="Harmony Sound Logo" width="50" height="50">
+                                    <h5 class="d-inline-block ms-2 mb-0">Harmony Sound</h5>
+                                </div>
+                                <p class="mb-4">Conectando el mundo a través de la música. Descubre, aprende y déjate inspirar por los sonidos que transforman vidas.</p>
+                                <div class="footer-social-icons">
+                                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                                    <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                                <h5 class="footer-heading">Navegación</h5>
+                                <ul class="footer-links">
+                                    <li><a href="index.html"><i class="bi bi-chevron-right"></i> Inicio</a></li>
+                                    <li><a href="instrumentos.html"><i class="bi bi-chevron-right"></i> Instrumentos</a></li>
+                                    <li><a href="historia.html"><i class="bi bi-chevron-right"></i> Historia</a></li>
+                                    <li><a href="contacto.html"><i class="bi bi-chevron-right"></i> Contacto</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6">
+                                <h5 class="footer-heading">Contáctanos</h5>
+                                <div class="footer-contact-info">
+                                    <p><i class="bi bi-geo-alt-fill me-2"></i> Avenida de la Música 123, Ciudad Musical</p>
+                                    <p><i class="bi bi-envelope-fill me-2"></i> info@harmonysound.com</p>
+                                    <p><i class="bi bi-telephone-fill me-2"></i> +1 234 567 890</p>
+                                </div>
+                                <div class="footer-newsletter mt-4">
+                                    <h6>Suscríbete a nuestro newsletter</h6>
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" placeholder="Tu email">
+                                        <button class="btn btn-warning" type="button" id="btnFooterSubscribe">
+                                            <i class="bi bi-send-fill"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-        <!-- Sección de Video -->
-        <div class="row justify-content-center mt-5">
-            <div class="col-lg-8 text-center">
-                <h3 class="mb-4">Nuestro Canal</h3>
-                <div class="ratio ratio-16x9 mb-5">
-                    <!-- Reemplaza el SRC con tu enlace de YouTube -->
-                    <iframe width="1903" height="742" src="https://www.youtube.com/embed/M5YX_lAvd7g" title="La Mona Lisa en 90 segundos. Todo lo que deberías saber" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            title="Video de Vecordia" 
-                            allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        </div>
-
-        <!-- Sección de Ubicación -->
-        <div class="row justify-content-center mt-5">
-            <div class="col-lg-8 text-center">
-                <h3 class="mb-4">Nuestra Ubicación</h3>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121967.45012706082!2d-69.98961460073425!3d18.482068910965692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f1107ea5ab%3A0xd6c587b82715c164!2sSanto%20Domingo%2C%20Rep%C3%BAblica%20Dominicana!5e0!3m2!1ses!2s!4v1699887458021!5m2!1ses!2s" 
-                            width="600" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
-
-    <footer class="pie-pagina mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>Vecordia</h5>
-                    <p>Explorando la belleza del arte universal</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Enlaces Rápidos</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="obras.html">Obras Famosas</a></li>
-                        <li><a href="historia.html">Historia</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Síguenos</h5>
-                    <div class="iconos-sociales">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-twitter"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <p class="mb-md-0 text-center text-md-start">&copy; 2025 Harmony Sound. Todos los derechos reservados.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="footer-bottom-links text-center text-md-end">
+                                    <li><a href="#">Términos y Condiciones</a></li>
+                                    <li><a href="#">Privacidad</a></li>
+                                    <li><a href="#">Cookies</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </footer>
+            </footer>
 
-
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    <script src="js/funciones.js"></script>
+    <!-- Bootstrap JS Bundle con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- JavaScript personalizado -->
+    <script src="js/scripts.js"></script>
 </body>
 </html>

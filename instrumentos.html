@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora nuestra colección de instrumentos musicales - Harmony Sound">
+    <meta name="keywords" content="instrumentos musicales, piano, guitarra, batería, violín, saxofón, orquesta">
+    <meta name="author" content="Harmony Sound">
+    <title>Instrumentos Musicales | Harmony Sound</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    
+    <!-- Google Fonts - Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Estilos personalizados -->
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <!-- Botón de modo oscuro a la izquierda -->
+            <button id="darkModeToggle" class="btn btn-outline-warning d-none d-lg-block">
+                <i class="bi bi-moon"></i>
+            </button>
+            
+            <!-- Botón del menú para móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Logo y nombre totalmente centrados -->
+            <a class="navbar-brand position-absolute start-50 translate-middle-x" href="index.html">
+                <img src="assets/logo.svg" alt="Logo Harmony Sound" class="logo-brand" width="40" height="40">
+                <span class="d-none d-sm-inline-block">Harmony Sound</span>
+            </a>
+            
+            <!-- Menú de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instrumentos.html">Instrumentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                    <!-- Botón de modo oscuro para móviles -->
+                    <li class="nav-item d-lg-none">
+                        <button id="darkModeToggleMobile" class="btn btn-outline-warning ms-2 w-100 mt-2">
+                            <i class="bi bi-moon"></i> Cambiar Tema
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <div class="hero-section text-white py-5 mb-4">
+            <div class="container text-center">
+                <h1 class="display-4">Instrumentos Musicales</h1>
+                <p class="lead">Descubre el fascinante mundo de los instrumentos que dan vida a la música</p>
+            </div>
+        </div>
+
+        <!-- Instrumentos -->
+        <div class="container mb-5">
+            <div class="row g-4">
+                <!-- Piano -->
+                <div class="col-lg-4 col-md-6 instrument-item" data-category="teclado" id="piano">
+                    <div class="card h-100">
+                        <div class="instrument-img-container">
+                            <img src="assets/Piano.jpg" class="card-img-top instrument-img" alt="Piano de cola">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Piano</h3>
+                            <p class="card-text fw-bold">Instrumento de teclado</p>
+                            <p class="card-text">El piano es un instrumento musical armónico clasificado como instrumento de teclado y de cuerdas percutidas por el sistema de clasificación tradicional. El músico que toca el piano recibe el nombre de pianista.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guitarra -->
+                <div class="col-lg-4 col-md-6 instrument-item" data-category="cuerda" id="guitarra">
+                    <div class="card h-100">
+                        <div class="instrument-img-container">
+                            <img src="assets/Guitarra.jpg" class="card-img-top instrument-img" alt="Guitarra">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Guitarra</h3>
+                            <p class="card-text fw-bold">Instrumento de cuerda</p>
+                            <p class="card-text">La guitarra es un instrumento musical de cuerda pulsada, compuesto de una caja de resonancia, un mástil sobre el que va adosado el diapasón y seis cuerdas. Sobre el diapasón van incrustados los trastes.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Batería -->
+                <div class="col-lg-4 col-md-6 instrument-item" data-category="percusion">
+                    <div class="card h-100">
+                        <div class="instrument-img-container">
+                            <img src="assets/Bateria.jpg" class="card-img-top instrument-img" alt="Batería">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Batería</h3>
+                            <p class="card-text fw-bold">Instrumento de percusión</p>
+                            <p class="card-text">La batería es un conjunto de instrumentos de percusión, que consta de tambores, bombos, platillos y otros accesorios. Es ampliamente utilizada en muchos géneros musicales y es la base rítmica de bandas de rock, pop, jazz y otros estilos.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Violín -->
+                <div class="col-lg-4 col-md-6 instrument-item" data-category="cuerda">
+                    <div class="card h-100">
+                        <div class="instrument-img-container">
+                            <img src="assets/Violines.jpg" class="card-img-top instrument-img" alt="Violín">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Violín</h3>
+                            <p class="card-text fw-bold">Instrumento de cuerda frotada</p>
+                            <p class="card-text">El violín es un instrumento de cuerda frotada que tiene cuatro cuerdas afinadas por intervalos de quintas: sol, re, la y mi. Es el más pequeño y agudo de la familia de los instrumentos de cuerda clásicos.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Saxofón -->
+                <div class="col-lg-4 col-md-6 instrument-item" data-category="viento">
+                    <div class="card h-100">
+                        <div class="instrument-img-container">
+                            <img src="assets/saxofon.jpg" class="card-img-top instrument-img" alt="Saxofón">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Saxofón</h3>
+                            <p class="card-text fw-bold">Instrumento de viento-madera</p>
+                            <p class="card-text">El saxofón es un instrumento musical de viento-madera, generalmente fabricado de latón, que consta de una boquilla con una caña simple. Fue inventado por Adolphe Sax en la década de 1840.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trompeta -->
+                <div class="col-lg-4 col-md-6 instrument-item" data-category="viento">
+                    <div class="card h-100">
+                        <div class="instrument-img-container">
+                            <img src="assets/Trompeta.jpg" class="card-img-top instrument-img" alt="Trompeta">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Trompeta</h3>
+                            <p class="card-text fw-bold">Instrumento de viento-metal</p>
+                            <p class="card-text">La trompeta es un instrumento musical de viento-metal que consta de un tubo largo y doblado, terminado en una campana acústica. Es uno de los instrumentos más antiguos y se utiliza en diversos géneros musicales.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flauta -->
+                <div class="col-lg-4 col-md-6 instrument-item" data-category="viento">
+                    <div class="card h-100">
+                        <div class="instrument-img-container">
+                            <img src="assets/Flauta.jpg" class="card-img-top instrument-img" alt="Flauta traversa">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Flauta Traversa</h3>
+                            <p class="card-text fw-bold">Instrumento de viento-madera</p>
+                            <p class="card-text">La flauta traversa es un instrumento musical de viento-madera. Es uno de los instrumentos más antiguos y se utiliza tanto en orquestas clásicas como en diversos géneros musicales contemporáneos.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arpa -->
+                <div class="col-lg-4 col-md-6 instrument-item" data-category="cuerda">
+                    <div class="card h-100">
+                        <div class="instrument-img-container">
+                            <img src="assets/Arpa.jpg" class="card-img-top instrument-img" alt="Arpa">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Arpa</h3>
+                            <p class="card-text fw-bold">Instrumento de cuerda pulsada</p>
+                            <p class="card-text">El arpa es un instrumento de cuerda pulsada formado por un marco resonante y una serie de cuerdas tensadas entre la sección inferior y la superior. Las cuerdas pueden ser pulsadas con los dedos.</p>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+                <!-- Footer -->
+                <footer class="footer">
+                    <div class="footer-content">
+                        <div class="container py-5">
+                            <div class="row justify-content-between">
+                                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                                    <div class="footer-brand mb-4">
+                                        <img src="assets/logo.svg" alt="Harmony Sound Logo" width="50" height="50">
+                                        <h5 class="d-inline-block ms-2 mb-0">Harmony Sound</h5>
+                                    </div>
+                                    <p class="mb-4">Conectando el mundo a través de la música. Descubre, aprende y déjate inspirar por los sonidos que transforman vidas.</p>
+                                    <div class="footer-social-icons">
+                                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                                    <h5 class="footer-heading">Navegación</h5>
+                                    <ul class="footer-links">
+                                        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Inicio</a></li>
+                                        <li><a href="instrumentos.html"><i class="bi bi-chevron-right"></i> Instrumentos</a></li>
+                                        <li><a href="historia.html"><i class="bi bi-chevron-right"></i> Historia</a></li>
+                                        <li><a href="contacto.html"><i class="bi bi-chevron-right"></i> Contacto</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6">
+                                    <h5 class="footer-heading">Contáctanos</h5>
+                                    <div class="footer-contact-info">
+                                        <p><i class="bi bi-geo-alt-fill me-2"></i> Avenida de la Música 123, Ciudad Musical</p>
+                                        <p><i class="bi bi-envelope-fill me-2"></i> info@harmonysound.com</p>
+                                        <p><i class="bi bi-telephone-fill me-2"></i> +1 234 567 890</p>
+                                    </div>
+                                    <div class="footer-newsletter mt-4">
+                                        <h6>Suscríbete a nuestro newsletter</h6>
+                                        <div class="input-group">
+                                            <input type="email" class="form-control" placeholder="Tu email">
+                                            <button class="btn btn-warning" type="button" id="btnFooterSubscribe">
+                                                <i class="bi bi-send-fill"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-bottom">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <p class="mb-md-0 text-center text-md-start">&copy; 2025 Harmony Sound. Todos los derechos reservados.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="footer-bottom-links text-center text-md-end">
+                                        <li><a href="#">Términos y Condiciones</a></li>
+                                        <li><a href="#">Privacidad</a></li>
+                                        <li><a href="#">Cookies</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+    <!-- Bootstrap JS Bundle con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- JavaScript personalizado -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

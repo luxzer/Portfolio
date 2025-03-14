@@ -1,185 +1,437 @@
-
-.logo-marca {
-    height: 40px;
+/* Estilos generales */
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #FDFDFD; /* Fondo blanco marfil por defecto (modo claro) */
+    color: #1C1C1C; /* Texto negro carbón por defecto (modo claro) */
+    line-height: 1.6;
 }
 
-body.modo-oscuro {
-    background-color: #303231;
-    color: #fff;
+h1, h2, h3, h4, h5, h6 {
+    color: #007BFF; /* Azul eléctrico para títulos en modo claro */
 }
 
-.modo-oscuro .navbar {
-    background-color: #303231 !important;
+a {
+    color: #007BFF; /* Azul eléctrico para enlaces */
+    text-decoration: none;
 }
 
-.modo-oscuro .navbar-light .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.8);
+a:hover {
+    color: #0056b3; /* Azul más oscuro al pasar el mouse */
+    text-decoration: underline;
 }
 
-.modo-oscuro .card {
-    background-color: #444;
-    color: #fff;
+/* Navbar */
+.navbar {
+    background-color: #FDFDFD; /* Fondo blanco marfil por defecto (modo claro) */
+    border-bottom: 2px solid #007BFF; /* Borde azul eléctrico */
 }
 
-.modo-oscuro .modal-content {
-    background-color: #303231;
-    color: #fff;
+.navbar-brand {
+    color: #007BFF !important; /* Azul eléctrico para el nombre de la marca en modo claro */
+    font-weight: bold;
 }
 
-.modo-oscuro .list-group-item {
-    background-color: #303231;
-    color: #fff;
+.nav-link {
+    color: #1C1C1C !important; /* Texto negro carbón en modo claro */
 }
 
+.nav-link.active {
+    color: #007BFF !important; /* Azul eléctrico para el enlace activo */
+    font-weight: bold;
+}
 
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #007BFF; /* Azul eléctrico para el título en modo claro */
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    color: #1C1C1C; /* Texto negro carbón en modo claro */
+}
+
+/* Cards */
 .card {
+    background-color: #FFFFFF; /* Fondo blanco para tarjetas en modo claro */
+    border: 1px solid #007BFF; /* Borde azul eléctrico */
+    border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px); /* Efecto de elevación al pasar el mouse */
 }
 
-.iconos-sociales i {
-    font-size: 1.5rem;
-    margin: 0 0.5rem;
-    color: #6c757d;
-    transition: color 0.3s ease;
+.card-title {
+    color: #007BFF; /* Azul eléctrico para títulos de tarjetas en modo claro */
 }
 
-.iconos-sociales i:hover {
-    color: #0d6efd;
+.card-text {
+    color: #1C1C1C; /* Texto negro carbón en modo claro */
 }
 
-.hero-principal {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('../assets/EscuelaDeAtenas.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    margin-top: -76px;
-}
-
-
-.carousel-inner img {
-    height: 200px;
-    object-fit: cover;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%;
-    background-color: rgba(0,0,0,0.2);
-}
-
-.carousel:hover .carousel-control-prev,
-.carousel:hover .carousel-control-next {
-    background-color: rgba(0,0,0,0.5);
-}
-
-
-.bg-light {
-    background-color: #f8f9fa;
-}
-
-.lead {
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-
-.bi-check-circle-fill {
-    font-size: 1.2rem;
-}
-
-
-#modalImagen .modal-dialog {
-    max-width: 90vw;
-}
-
-#modalImagen img {
-    max-height: 80vh;
-    width: auto;
-    margin: auto;
-}
-
-
-.quienes-somos {
-    background-color: #f8f9fa;
-}
-
-.quienes-somos .image-container {
+/* Timeline */
+.timeline-item {
     position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding-left: 40px;
+    margin-bottom: 50px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #007BFF; /* Punto azul eléctrico */
+    border-radius: 50%;
+}
+
+.timeline-date {
+    color: #007BFF; /* Azul eléctrico para fechas en modo claro */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.timeline-content {
+    background-color: #FFFFFF; /* Fondo blanco para contenido en modo claro */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #007BFF; /* Borde azul eléctrico */
+}
+
+/* Footer */
+.footer {
+    background-color: #FDFDFD; /* Fondo blanco marfil en modo claro */
+    color: #1C1C1C; /* Texto negro carbón en modo claro */
+    padding: 40px 0;
+    border-top: 2px solid #007BFF; /* Borde azul eléctrico */
+}
+
+.footer-brand {
+    color: #007BFF; /* Azul eléctrico para el nombre de la marca en modo claro */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-social-icons a {
+    color: #1C1C1C; /* Íconos negros en modo claro */
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.footer-social-icons a:hover {
+    color: #007BFF; /* Azul eléctrico al pasar el mouse */
+}
+
+.footer-links li a {
+    color: #1C1C1C; /* Texto negro carbón en modo claro */
+}
+
+.footer-links li a:hover {
+    color: #007BFF; /* Azul eléctrico al pasar el mouse */
+}
+
+.footer-contact-info p {
+    color: #1C1C1C; /* Texto negro carbón en modo claro */
+}
+
+.footer-newsletter .form-control {
+    background-color: #FFFFFF; /* Fondo blanco para el input en modo claro */
+    border: 1px solid #007BFF; /* Borde azul eléctrico */
+    color: #1C1C1C; /* Texto negro carbón en modo claro */
+}
+
+.footer-newsletter .btn {
+    background-color: #007BFF; /* Botón azul eléctrico */
+    color: #FDFDFD; /* Texto blanco marfil */
+}
+
+.footer-newsletter .btn:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+.footer-bottom {
+    background-color: #FDFDFD; /* Fondo blanco marfil en modo claro */
+    padding: 20px 0;
+    border-top: 1px solid #007BFF; /* Borde azul eléctrico */
+}
+
+.footer-bottom-links li a {
+    color: #1C1C1C; /* Texto negro carbón en modo claro */
+}
+
+.footer-bottom-links li a:hover {
+    color: #007BFF; /* Azul eléctrico al pasar el mouse */
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #007BFF; /* Botón azul eléctrico */
+    border: none;
+    color: #FDFDFD; /* Texto blanco marfil */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+.btn-outline-warning {
+    border-color: #FFD700; /* Borde amarillo dorado */
+    color: #FFD700; /* Texto amarillo dorado */
+}
+
+.btn-outline-warning:hover {
+    background-color: #FFD700; /* Fondo amarillo dorado al pasar el mouse */
+    color: #1C1C1C; /* Texto negro carbón */
+}
+
+/* Modo oscuro */
+.dark-mode {
+    background-color: #1C1C1C; /* Fondo negro carbón en modo oscuro */
+    color: #FDFDFD; /* Texto blanco marfil en modo oscuro */
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+    color: #FFD700; /* Amarillo dorado para títulos en modo oscuro */
+}
+
+.dark-mode .navbar {
+    background-color: #1C1C1C; /* Fondo negro carbón en modo oscuro */
+    border-bottom: 2px solid #007BFF; /* Borde azul eléctrico */
+}
+
+.dark-mode .navbar-brand {
+    color: #FFD700 !important; /* Amarillo dorado para el nombre de la marca en modo oscuro */
+}
+
+.dark-mode .nav-link {
+    color: #FDFDFD !important; /* Texto blanco marfil en modo oscuro */
+}
+
+.dark-mode .nav-link.active {
+    color: #007BFF !important; /* Azul eléctrico para el enlace activo */
+}
+
+.dark-mode .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/Guitarra.jpg');
+}
+
+.dark-mode .hero-section h1 {
+    color: #FFD700; /* Amarillo dorado para el título en modo oscuro */
+}
+
+.dark-mode .hero-section p {
+    color: #FDFDFD; /* Texto blanco marfil en modo oscuro */
+}
+
+.dark-mode .card {
+    background-color: #2C2C2C; /* Fondo oscuro para tarjetas en modo oscuro */
+    border: 1px solid #007BFF; /* Borde azul eléctrico */
+}
+
+.dark-mode .card-title {
+    color: #FFD700; /* Amarillo dorado para títulos de tarjetas en modo oscuro */
+}
+
+.dark-mode .card-text {
+    color: #FDFDFD; /* Texto blanco marfil en modo oscuro */
+}
+
+.dark-mode .footer {
+    background-color: #1C1C1C; /* Fondo negro carbón en modo oscuro */
+    color: #FDFDFD; /* Texto blanco marfil en modo oscuro */
+    border-top: 2px solid #007BFF; /* Borde azul eléctrico */
+}
+
+.dark-mode .footer-brand {
+    color: #FFD700; /* Amarillo dorado para el nombre de la marca en modo oscuro */
+}
+
+.dark-mode .footer-social-icons a {
+    color: #FDFDFD; /* Íconos blancos en modo oscuro */
+}
+
+.dark-mode .footer-social-icons a:hover {
+    color: #007BFF; /* Azul eléctrico al pasar el mouse */
+}
+
+.dark-mode .footer-links li a {
+    color: #FDFDFD; /* Texto blanco marfil en modo oscuro */
+}
+
+.dark-mode .footer-links li a:hover {
+    color: #007BFF; /* Azul eléctrico al pasar el mouse */
+}
+
+.dark-mode .footer-contact-info p {
+    color: #FDFDFD; /* Texto blanco marfil en modo oscuro */
+}
+
+.dark-mode .footer-newsletter .form-control {
+    background-color: #2C2C2C; /* Fondo oscuro para el input en modo oscuro */
+    border: 1px solid #007BFF; /* Borde azul eléctrico */
+    color: #FDFDFD; /* Texto blanco marfil en modo oscuro */
+}
+
+.dark-mode .footer-newsletter .btn {
+    background-color: #007BFF; /* Botón azul eléctrico */
+    color: #FDFDFD; /* Texto blanco marfil */
+}
+
+.dark-mode .footer-newsletter .btn:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+.dark-mode .footer-bottom {
+    background-color: #1C1C1C; /* Fondo negro carbón en modo oscuro */
+    border-top: 1px solid #007BFF; /* Borde azul eléctrico */
+}
+
+.dark-mode .footer-bottom-links li a {
+    color: #FDFDFD; /* Texto blanco marfil en modo oscuro */
+}
+
+.dark-mode .footer-bottom-links li a:hover {
+    color: #007BFF; /* Azul eléctrico al pasar el mouse */
+}
+
+/* Preguntas Frecuentes en Modo Oscuro */
+.dark-mode .accordion {
+    background-color: #2C2C2C; /* Fondo oscuro para el acordeón */
+    border: 1px solid #007BFF; /* Borde azul eléctrico */
+}
+
+.dark-mode .accordion-item {
+    background-color: #2C2C2C; /* Fondo oscuro para cada ítem del acordeón */
+    border-bottom: 1px solid #007BFF; /* Borde azul eléctrico */
+}
+
+.dark-mode .accordion-button {
+    background-color: #2C2C2C; /* Fondo oscuro para el botón del acordeón */
+    color: #FDFDFD; /* Texto blanco marfil en modo oscuro */
+}
+
+.dark-mode .accordion-button:not(.collapsed) {
+    background-color: #1C1C1C; /* Fondo más oscuro cuando está expandido */
+    color: #FFD700; /* Amarillo dorado para el texto cuando está expandido */
+}
+
+.dark-mode .accordion-body {
+    background-color: #2C2C2C; /* Fondo oscuro para el cuerpo del acordeón */
+    color: #FDFDFD; /* Texto blanco marfil en modo oscuro */
+}
+
+/* Estilos para la tarjeta de información de contacto */
+.contact-info-card {
+    background-color: #FFFFFF; /* Fondo blanco en modo claro */
+    border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
-.quienes-somos .image-container:hover {
-    transform: translateY(-5px);
+.contact-info-card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
 }
 
-.quienes-somos img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.contact-icon {
+    color: #007BFF; /* Color azul eléctrico para los íconos */
+    font-size: 1.2rem;
 }
 
-.quienes-somos .content-container {
-    padding: 2rem;
+.social-icons a {
+    color: #1C1C1C; /* Color negro para los íconos de redes sociales en modo claro */
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
 }
 
-.quienes-somos h2 {
-    color: #333;
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+.social-icons a:hover {
+    color: #007BFF; /* Color azul eléctrico al pasar el mouse */
 }
 
-.quienes-somos .lead {
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: #555;
-    line-height: 1.6;
+/* Modo oscuro */
+.dark-mode .contact-info-card {
+    background-color: #2C2C2C; /* Fondo oscuro en modo oscuro */
+    border: 1px solid #007BFF; /* Borde azul eléctrico */
 }
 
-.quienes-somos p {
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
+.dark-mode .contact-info-card * {
+    color: #FDFDFD !important; /* Texto blanco en modo oscuro */
 }
 
+.dark-mode .contact-icon {
+    color: #FFD700; /* Color amarillo dorado para los íconos en modo oscuro */
+}
+
+.dark-mode .social-icons a {
+    color: #FDFDFD; /* Color blanco para los íconos de redes sociales en modo oscuro */
+}
+
+.dark-mode .social-icons a:hover {
+    color: #FFD700; /* Color amarillo dorado al pasar el mouse */
+}
+
+/* Estilos para la tarjeta de "Nuestra historia" */
+.card {
+    background-color: #FFFFFF; /* Fondo blanco en modo claro */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+}
+
+.card-body {
+    color: #1C1C1C; /* Texto negro en modo claro */
+}
+
+.card-title {
+    color: #007BFF; /* Color azul eléctrico para el título en modo claro */
+}
+
+.lead {
+    color: #1C1C1C; /* Texto negro para el subtítulo en modo claro */
+}
+
+/* Modo oscuro */
+.dark-mode .card {
+    background-color: #2C2C2C; /* Fondo oscuro en modo oscuro */
+    border: 1px solid #007BFF; /* Borde azul eléctrico */
+}
+
+.dark-mode .card-body {
+    color: #FDFDFD !important; /* Texto blanco en modo oscuro */
+}
+
+.dark-mode .card-title {
+    color: #FFD700 !important; /* Color amarillo dorado para el título en modo oscuro */
+}
+
+.dark-mode .lead {
+    color: #FDFDFD !important; /* Texto blanco para el subtítulo en modo oscuro */
+}
+
+.dark-mode p {
+    color: #FDFDFD !important; /* Texto blanco para los párrafos en modo oscuro */
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    .quienes-somos .content-container {
-        padding: 1rem 0;
+    .hero-section h1 {
+        font-size: 2.5rem;
     }
-    
-    .quienes-somos h2 {
-        font-size: 2rem;
+
+    .hero-section p {
+        font-size: 1.2rem;
     }
-}
 
-.modo-oscuro .quienes-somos {
-    background-color: #333;
-}
-
-.modo-oscuro .quienes-somos h2 {
-    color: #fff;
-}
-
-.modo-oscuro .quienes-somos .lead {
-    color: #e0e0e0;
-}
-
-.modo-oscuro .quienes-somos p {
-    color: #ccc;
-}
-
-.modo-oscuro .quienes-somos .text-muted {
-    color: #aaa !important;
-}
-
-.modo-oscuro .navbar-brand {
-    color: white !important;
-}
-.hero-section {
-    background-color: #B12C2C !important;
+    .navbar-brand span {
+        display: none;
+    }
 }

@@ -3,46 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contacta con Vecordia - Tu portal de arte">
-    <meta name="keywords" content="contacto, arte, consultas, mensaje">
-    <meta name="author" content="Luis Calderon / Vecordia">
-    <title class="titulo-contacto">Contacto</title>
+    <meta name="description" content="Contacta con Harmony Sound - Tu portal de música e instrumentos musicales">
+    <meta name="keywords" content="contacto, música, instrumentos, consultas, mensaje">
+    <meta name="author" content="Harmony Sound">
+    <title>Contacto | Harmony Sound</title>
     
-
-    <link rel="icon" type="image/svg+xml" href="assets/LogoS.svg">
-        
-
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    
+    <!-- Google Fonts - Raleway -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
-
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
-
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     
-
+    <!-- Estilos personalizados -->
     <link href="css/estilos.css" rel="stylesheet">
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="./assets/LogoS.svg" alt="Logo Vecordia" class="logo-marca" width="40" height="40">
-                 Vecordia
-            </a>
+            <!-- Botón de modo oscuro a la izquierda -->
+            <button id="darkModeToggle" class="btn btn-outline-warning d-none d-lg-block">
+                <i class="bi bi-moon"></i>
+            </button>
+            
+            <!-- Botón del menú para móviles -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
+            <!-- Logo y nombre totalmente centrados -->
+            <a class="navbar-brand position-absolute start-50 translate-middle-x" href="index.html">
+                <img src="assets/logo.svg" alt="Logo Harmony Sound" class="logo-brand" width="40" height="40">
+                <span class="d-none d-sm-inline-block">Harmony Sound</span>
+            </a>
+            
+            <!-- Menú de navegación -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="obras.html">Obras Famosas</a>
+                        <a class="nav-link" href="instrumentos.html">Instrumentos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="historia.html">Historia</a>
@@ -50,172 +60,185 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="contacto.html">Contacto</a>
                     </li>
-                <li class="nav-item">
-                    <button id="botonModoOscuro" class="btn btn-outline-primary ms-2">
-                        <i class="bi bi-moon"></i>
-                    </button>
-                </li>
+                    <!-- Botón de modo oscuro para móviles -->
+                    <li class="nav-item d-lg-none">
+                        <button id="darkModeToggleMobile" class="btn btn-outline-warning ms-2 w-100 mt-2">
+                            <i class="bi bi-moon"></i> Cambiar Tema
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <main>
-
+        <!-- Hero Section -->
         <div class="hero-section text-white py-5 mb-5">
             <div class="container text-center">
                 <h1 class="display-4">Contacto y Privacidad</h1>
-                <p class="lead">Aca te podras contactar y ver nuestras politicas de Privacidad!</p>
+                <p class="lead">Conecta con nosotros y descubre nuestras políticas</p>
             </div>
         </div>
 
+        <!-- Sección de Video y Mapa -->
         <div class="container mb-5">
-            <div class="row justify-content-center mb-5">
-                <div class="col-12">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <h2 class="text-center mb-4">Política de Privacidad</h2>
-                            
-                            <div class="row">
-                                <div class="col-md-6 mb-4">
-                                    <div class="d-flex align-items-start">
-                                        <i class="bi bi-shield-check text-primary me-3 fs-4"></i>
-                                        <div>
-                                            <h3 class="h5">Recopilación de Información</h3>
-                                            <p>Recopilamos información personal como:</p>
-                                            <ul>
-                                                <li>Nombre y datos de contacto</li>
-                                                <li>Información de uso del sitio</li>
-                                                <li>Preferencias artísticas</li>
-                                            </ul>
+            <div class="row">
+                <!-- Video de Juan Luis Guerra -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4"><i class="bi bi-music-note-beamed text-primary me-2"></i>Nuestra Inspiración</h3>
+                            <div class="ratio ratio-16x9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/SRLRCCffvlA?si=iF_I_K3jGXmwFJiX&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <p class="mt-3 text-muted">La música caribeña es una de nuestras grandes influencias. Juan Luis Guerra representa la riqueza musical de nuestra región.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mapa UNPHU -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4"><i class="bi bi-geo-alt-fill text-primary me-2"></i>Nuestra Ubicación</h3>
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.3133301047987!2d-69.94042702384146!3d18.468106682604236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f1b9fe67ab%3A0x3c334c1df5be1871!2sUniversidad%20Nacional%20Pedro%20Henr%C3%ADquez%20Ure%C3%B1a%20(UNPHU)!5e0!3m2!1ses!2sdo!4v1699978371353!5m2!1ses!2sdo" 
+                                    width="600" 
+                                    height="450" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <p class="mt-3 text-muted">Estamos ubicados cerca de la Universidad Nacional Pedro Henríquez Ureña (UNPHU), en Santo Domingo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     <!-- Formulario de contacto y datos -->
+<div class="container mb-5">
+    <div class="row justify-content-center"> <!-- Centrar el contenido -->
+        <!-- Información de contacto -->
+        <div class="col-lg-8 col-md-10 mb-4"> <!-- Aumentar el ancho -->
+            <div class="card border-0 shadow-sm h-100 contact-info-card">
+                <div class="card-body p-4 p-lg-5"> <!-- Aumentar el padding -->
+                    <h3 class="card-title mb-4 text-center">Información de Contacto</h3> <!-- Centrar el título -->
+                    <div class="row"> <!-- Usar una fila para organizar el contenido -->
+                        <!-- Columna 1: Información básica -->
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-4">
+                                    <div class="d-flex">
+                                        <div class="contact-icon">
+                                            <i class="bi bi-geo-alt"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <h4 class="h6 mb-1">Dirección</h4>
+                                            <p class="mb-0">Avenida de la Música 123, Ciudad Musical</p>
                                         </div>
                                     </div>
-                                </div>
-        
-                                <div class="col-md-6 mb-4">
-                                    <div class="d-flex align-items-start">
-                                        <i class="bi bi-gear text-primary me-3 fs-4"></i>
-                                        <div>
-                                            <h3 class="h5">Uso de la Información</h3>
-                                            <p>Utilizamos tu información para:</p>
-                                            <ul>
-                                                <li>Mejorar tu experiencia</li>
-                                                <li>Personalizar contenido</li>
-                                                <li>Comunicaciones importantes</li>
-                                            </ul>
+                                </li>
+                                <li class="mb-4">
+                                    <div class="d-flex">
+                                        <div class="contact-icon">
+                                            <i class="bi bi-envelope"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <h4 class="h6 mb-1">Email</h4>
+                                            <p class="mb-0">info@harmonysound.com</p>
                                         </div>
                                     </div>
-                                </div>
-        
-                                <div class="col-md-6 mb-4">
-                                    <div class="d-flex align-items-start">
-                                        <i class="bi bi-lock text-primary me-3 fs-4"></i>
-                                        <div>
-                                            <h3 class="h5">Protección de Datos</h3>
-                                            <p>Protegemos tu información mediante:</p>
-                                            <ul>
-                                                <li>Encriptación SSL</li>
-                                                <li>Acceso controlado</li>
-                                                <li>Actualizaciones de seguridad</li>
-                                            </ul>
+                                </li>
+                                <li class="mb-4">
+                                    <div class="d-flex">
+                                        <div class="contact-icon">
+                                            <i class="bi bi-telephone"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <h4 class="h6 mb-1">Teléfono</h4>
+                                            <p class="mb-0">+1 234 567 890</p>
                                         </div>
                                     </div>
-                                </div>
-        
-                                <div class="col-md-6 mb-4">
-                                    <div class="d-flex align-items-start">
-                                        <i class="bi bi-cookie text-primary me-3 fs-4"></i>
-                                        <div>
-                                            <h3 class="h5">Cookies y Tecnologías</h3>
-                                            <p>Utilizamos cookies para:</p>
-                                            <ul>
-                                                <li>Mejorar la navegación</li>
-                                                <li>Recordar preferencias</li>
-                                                <li>Análisis de uso</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Columna 2: Horario y redes sociales -->
+                        <div class="col-md-6">
+                            <h4 class="h5 mt-4 mb-3">Horario de Atención</h4>
+                            <ul class="list-unstyled schedule">
+                                <li class="d-flex justify-content-between mb-2">
+                                    <span>Lunes - Viernes:</span>
+                                    <span>9:00 - 18:00</span>
+                                </li>
+                                <li class="d-flex justify-content-between mb-2">
+                                    <span>Sábados:</span>
+                                    <span>10:00 - 14:00</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <span>Domingos:</span>
+                                    <span>Cerrado</span>
+                                </li>
+                            </ul>
+                            <div class="social-media mt-4">
+                                <h4 class="h5 mb-3">Síguenos</h4>
+                                <div class="social-icons">
+                                    <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" class="me-2"><i class="bi bi-twitter-x"></i></a>
+                                    <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+                                    <a href="#"><i class="bi bi-youtube"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
+        </div>
+    </div>
+</div>
+        <!-- Preguntas Frecuentes -->
         <div class="container mb-5">
-            <div class="row">
-
-                <div class="col-md-4 mb-4">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body">
-                            <h3 class="card-title">Información de Contacto</h3>
-                            <ul class="list-unstyled">
-                                <li class="mb-3">
-                                    <i class="bi bi-geo-alt text-primary me-2"></i>
-                                    Santo Domingo, RD
-                                </li>
-                                <li class="mb-3">
-                                    <i class="bi bi-envelope text-primary me-2"></i>
-                                    hola@vecordia.com
-                                </li>
-                                <li class="mb-3">
-                                    <i class="bi bi-telephone text-primary me-2"></i>
-                                    849-857-6060
-                                </li>
-                            </ul>
-                            <h4 class="mt-4">Horario</h4>
-                            <p>Lunes a Viernes: 9:00 - 18:00<br>
-                               Sábados: 10:00 - 14:00</p>
+            <h2 class="text-center mb-4">Preguntas Frecuentes</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ¿Ofrecen clases de música?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sí, ofrecemos clases virtuales y presenciales para diversos instrumentos y niveles. Puedes encontrar más información en nuestra sección de cursos o contactarnos directamente para recibir asesoramiento personalizado.
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-8">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body">
-                            <h3 class="card-title mb-4">Envíanos un Mensaje</h3>
-                            <form id="formularioContacto" class="needs-validation" novalidate>
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="nombre" class="form-label">Nombre</label>
-                                        <input type="text" class="form-control" id="nombre" required>
-                                        <div class="invalid-feedback">
-                                            Por favor, ingresa tu nombre
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="email" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="email" required>
-                                        <div class="invalid-feedback">
-                                            Por favor, ingresa un email válido
-                                        </div>
-                                    </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Venden instrumentos musicales?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No vendemos instrumentos directamente, pero disponemos de asociaciones con tiendas especializadas que ofrecen descuentos a nuestros miembros. Además, proporcionamos asesoramiento gratuito para la selección y compra de instrumentos.
                                 </div>
-                                <div class="mb-3">
-                                    <label for="asunto" class="form-label">Asunto</label>
-                                    <input type="text" class="form-control" id="asunto" required>
-                                    <div class="invalid-feedback">
-                                        Por favor, ingresa el asunto
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Cómo puedo unirme a la comunidad?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Puedes unirte a nuestra comunidad registrándote en nuestra plataforma web. Ofrecemos un plan gratuito con acceso a contenidos básicos y planes premium con beneficios adicionales. También puedes seguirnos en nuestras redes sociales para estar al día.
                                 </div>
-                                <div class="mb-3">
-                                    <label for="mensaje" class="form-label">Mensaje</label>
-                                    <textarea class="form-control" id="mensaje" rows="5" required></textarea>
-                                    <div class="invalid-feedback">
-                                        Por favor, ingresa tu mensaje
-                                    </div>
-                                </div>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                    <button type="submit" class="btn btn-primary">
-                                        <i class="bi bi-send me-2"></i>Enviar Mensaje
-                                    </button>
-                                    <a href="mailto:info@artemundo.com" class="btn btn-outline-primary">
-                                        <i class="bi bi-envelope me-2"></i>Enviar Email
-                                    </a>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -223,63 +246,100 @@
         </div>
     </main>
 
-
-    <footer class="pie-pagina mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>Vecordia</h5>
-                    <p>Explorando la belleza del arte universal</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Enlaces Rápidos</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="obras.html">Obras Famosas</a></li>
-                        <li><a href="historia.html">Historia</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Síguenos</h5>
-                    <div class="iconos-sociales">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-twitter"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                <!-- Footer -->
+                <footer class="footer">
+                    <div class="footer-content">
+                        <div class="container py-5">
+                            <div class="row justify-content-between">
+                                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                                    <div class="footer-brand mb-4">
+                                        <img src="assets/logo.svg" alt="Harmony Sound Logo" width="50" height="50">
+                                        <h5 class="d-inline-block ms-2 mb-0">Harmony Sound</h5>
+                                    </div>
+                                    <p class="mb-4">Conectando el mundo a través de la música. Descubre, aprende y déjate inspirar por los sonidos que transforman vidas.</p>
+                                    <div class="footer-social-icons">
+                                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                                    <h5 class="footer-heading">Navegación</h5>
+                                    <ul class="footer-links">
+                                        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Inicio</a></li>
+                                        <li><a href="instrumentos.html"><i class="bi bi-chevron-right"></i> Instrumentos</a></li>
+                                        <li><a href="historia.html"><i class="bi bi-chevron-right"></i> Historia</a></li>
+                                        <li><a href="contacto.html"><i class="bi bi-chevron-right"></i> Contacto</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6">
+                                    <h5 class="footer-heading">Contáctanos</h5>
+                                    <div class="footer-contact-info">
+                                        <p><i class="bi bi-geo-alt-fill me-2"></i> Avenida de la Música 123, Ciudad Musical</p>
+                                        <p><i class="bi bi-envelope-fill me-2"></i> info@harmonysound.com</p>
+                                        <p><i class="bi bi-telephone-fill me-2"></i> +1 234 567 890</p>
+                                    </div>
+                                    <div class="footer-newsletter mt-4">
+                                        <h6>Suscríbete a nuestro newsletter</h6>
+                                        <div class="input-group">
+                                            <input type="email" class="form-control" placeholder="Tu email">
+                                            <button class="btn btn-warning" type="button" id="btnFooterSubscribe">
+                                                <i class="bi bi-send-fill"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+                    
+                    <div class="footer-bottom">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <p class="mb-md-0 text-center text-md-start">&copy; 2025 Harmony Sound. Todos los derechos reservados.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="footer-bottom-links text-center text-md-end">
+                                        <li><a href="#">Términos y Condiciones</a></li>
+                                        <li><a href="#">Privacidad</a></li>
+                                        <li><a href="#">Cookies</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
 
-
-
-    <div class="modal fade" id="modalPrivacidad" tabindex="-1">
+    <!-- Modal de Bienvenida -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Política de Privacidad</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <h5 class="modal-title" id="welcomeModalLabel">¡Bienvenido a nuestra página de contacto!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h6>1. Recopilación de Información</h6>
-                    <p>Recopilamos información cuando te registras en nuestro sitio...</p>
-                    
-                    <h6>2. Uso de la Información</h6>
-                    <p>La información que recopilamos se utiliza para...</p>
+                    <div class="text-center mb-4">
+                        <i class="bi bi-music-note-beamed text-primary display-1"></i>
+                    </div>
+                    <p class="text-center">Estamos encantados de que quieras ponerte en contacto con nosotros.</p>
+                    <p class="text-center">Encuentra nuestra ubicación, información de contacto y formulario en esta página.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">¡Entendido!</button>
                 </div>
             </div>
         </div>
     </div>
 
-
+    <!-- Bootstrap JS Bundle con Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
-
-    <script src="js/funciones.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="js/scripts.js"></script>
 </body>
 </html>
