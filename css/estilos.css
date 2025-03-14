@@ -421,6 +421,24 @@ a:hover {
     color: #FDFDFD !important; /* Texto blanco para los párrafos en modo oscuro */
 }
 
+/* Estilos para el modal en modo oscuro */
+.dark-mode .modal-content {
+    background-color: #2C2C2C; /* Fondo oscuro */
+    color: #FDFDFD; /* Texto blanco */
+}
+
+.dark-mode .modal-header {
+    border-bottom: 1px solid #007BFF; /* Borde azul eléctrico */
+}
+
+.dark-mode .modal-title {
+    color: #FFD700; /* Título amarillo dorado */
+}
+
+.dark-mode .btn-close {
+    filter: invert(1); /* Invertir el color del botón de cierre */
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero-section h1 {

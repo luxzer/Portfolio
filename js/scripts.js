@@ -49,3 +49,9 @@ function updateDarkModeIconMobile(isDarkMode) {
         iconElement.classList.toggle('bi-sun', isDarkMode);
     }
 }
+
+// Mostrar el modal automáticamente cuando la página se cargue
+document.addEventListener('DOMContentLoaded', function () {
+    const welcomeModal = new bootstrap.Modal(document.getElementById('welcomeModal'));
+    welcomeModal.show();
+});
